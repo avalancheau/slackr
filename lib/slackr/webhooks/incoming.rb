@@ -28,7 +28,7 @@ module Slackr
   private
 
     def service_url
-      "#{connection.base_url}/services/hooks/incoming-webhook?token=#{connection.token}"
+      "/services/hooks/incoming-webhook?token=#{connection.token}"
     end
 
     def encode_message(text, options)

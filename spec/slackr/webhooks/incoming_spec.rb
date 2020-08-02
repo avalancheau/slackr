@@ -30,7 +30,7 @@ describe Slackr::IncomingWebhook do
       it "should generate the right url" do
         subject.instance_variable_set(:@connection, @connection)
         result = subject.send(:service_url)
-        expect(result).to eq "https://team.slack.com/services/hooks/incoming-webhook?token=token"
+        expect(result).to eq "/services/hooks/incoming-webhook?token=token"
       end
     end
 
